@@ -1,0 +1,1 @@
+{"version":3,"file":"letter-mapper.d.ts","sourceRoot":"","sources":["../../src/classes/letter-mapper.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,QAAQ,EAAC,MAAM,cAAc,CAAA;AACrC,OAAO,EAAc,WAAW,EAAC,MAAM,gBAAgB,CAAA;AAGvD,cAAM,YAAY;IAChB,SAAS,CAAC,QAAQ,CAAC,UAAU,EAAE,WAAW,CAAA;gBAE9B,QAAQ,EAAE,QAAQ;IAIvB,UAAU,CAAC,CAAC,EAAE,MAAM,GAAG,MAAM;CAOrC;AAED,eAAe,YAAY,CAAA"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"common-types.d.ts","sourceRoot":"","sources":["../../src/classes/common-types.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,WAAW;IAC1B,CAAC,GAAG,EAAE,MAAM,GAAG,MAAM,CAAA;CACtB;AAED,MAAM,WAAW,WAAW;IAC1B,QAAQ,IAAI,WAAW,CAAA;CACxB;AAED,MAAM,WAAW,aAAa;IAC5B,UAAU,CAAC,CAAC,EAAE,MAAM,GAAG,MAAM,CAAA;CAC9B"}

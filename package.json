@@ -1,0 +1,51 @@
+{
+  "name": "slugify-lng",
+  "version": "0.0.1",
+  "description": "Slugify plugin",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node_modules/.bin/tslint -c tslint.json src/**/*.ts",
+    "dev": "node_modules/.bin/ts-node-dev --inspect --respawn --transpileOnly -- src/index.ts",
+    "copy-resources": "mkdir -p ./build/resources && cp ./src/resources/*.json ./build/resources/",
+    "compile": "node_modules/.bin/tsc",
+    "build": "npm run copy-resources && npm run compile",
+    "test": "ts-mocha src/**/*.spec.ts --color --diff"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duduop666/slugify-lng.git"
+  },
+  "keywords": [
+    "slugify",
+    "language",
+    "lng",
+    "Intl"
+  ],
+  "author": "Aleh Belski <duduop666@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duduop666/slugify-lng/issues"
+  },
+  "homepage": "https://github.com/duduop666/slugify-lng#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.3",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.11",
+    "chai": "^4.2.0",
+    "husky": "^3.0.8",
+    "mocha": "^6.2.1",
+    "ts-mocha": "^6.0.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  },
+  "engines": {
+    "node": "10.16.0",
+    "npm": "6.9.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test"
+    }
+  },
+  "dependencies": {}
+}
