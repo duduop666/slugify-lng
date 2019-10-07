@@ -1,10 +1,16 @@
+import FileReader from "./classes/file-reader"
 import LetterMapper from "./classes/letter-mapper"
+import StringFormatter from "./classes/string-formatter"
 import {Language} from "./constants"
 
 function slugifyString(s: string, language: Language): string {
-  const letterMapper = new LetterMapper(language || Language.English)
+  const letterMapper = new StringFormatter(
+    new LetterMapper(
+      new FileReader(language),
+    ),
+  )
 
-  return letterMapper.mapLetters(s)
+  return letterMapper.prepareString(s)
 }
 
 export {
